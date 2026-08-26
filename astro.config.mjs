@@ -80,8 +80,27 @@ export default defineConfig({
               label: 'Regression',
               collapsed: true,
               items: [
+                { slug: 'analyses/jg_52_correlations' },
                 { slug: 'analyses/jg_42_regression-linear' },
                 { slug: 'analyses/jg_43_regression-logistic' },
+              ],
+            },
+            {
+              label: 'Frequency Tests',
+              collapsed: true,
+              items: [
+                { slug: 'analyses/jg_56_frequencies-goodness-of-fit' },
+                { slug: 'analyses/jg_51_frequencies-chi-square' },
+                { slug: 'analyses/jg_58_frequencies-binomial' },
+              ],
+            },
+            {
+              label: 'Factor Analysis',
+              collapsed: true,
+              items: [
+                { slug: 'analyses/jg_53_factor-analysis-efa-cfa' },
+                { slug: 'analyses/jg_57_factor-analysis-cfa' },
+                { slug: 'analyses/jg_54_reliability', label: 'Reliability Analysis' },
               ],
             },
           ],

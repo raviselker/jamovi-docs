@@ -1,0 +1,28 @@
+---
+title: "Chi-square goodness of fit"
+slug: analyses/jg_56_frequencies-goodness-of-fit
+---
+
+How to perform a chi-square goodness-of-fit test in jamovi:
+
+1.  You need one <img src="/images/variable-nominal.svg" alt="nominal" style="width: 16px; vertical-align: middle" /> nominal (categorical) variable. Example: data from rolling a die 60 times.
+
+	A correct setup should look similar to this (alternatively, one row per category with a second column for observed counts is also acceptable):
+
+	<img src="/images/jg_data_format_chi_square_gof.png" alt="data_format_chi_square_gof" style="width: 20.0%" />
+
+2.  Select `Analyses` -> `Frequencies` -> `One Sample Proportion Tests` -> `N Outcome (Chi-square Goodness of Fit)`.
+
+	<img src="/images/jg_select_chi_square_gof.png" alt="select_chi_square_gof" style="width: 70.0%" />
+
+3.  Drag your categorical variable into the variable box.
+
+	<img src="/images/jg_add_var_chi_square_gof.png" alt="add_var_chi_square_gof" style="width: 70.0%" />
+
+4.  In the options panel, click `Expected counts`. If you have specific expected proportions, enter them under `Expected Proportions`; otherwise jamovi assumes equal proportions across all categories.
+
+	<img src="/images/jg_options_chi_square_gof.png" alt="options_chi_square_gof" style="width: 70.0%" />
+
+5.  The result is shown in the right panel. Compare observed and expected counts, then use the chi-square p-value to decide whether differences are larger than chance.
+
+	<img src="/images/jg_output_chi_square_gof.png" alt="output_chi_square_gof" style="width: 40.0%" />
